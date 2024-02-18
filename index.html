@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lightGreen: '#1DD100',
+                        darkYellow: '#FFBF0F',
+                        lightPink: '#F78C9C'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Navigationbar -->
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl text-bold font-bold raleway-bold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-normal">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-xl text-bold text-lightGreen border-lightGreen bg-green-100">Bus <img
+                            src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="container">
+                    <div class="banner relative rounded-3xl">
+                        <div class="w-[780px] text-center item-center m-auto pt-16 pb-28">
+                            <h1 class="text-6xl font-bold text-white raleway-extrabold">End-to-End Travel with</h1>
+                            <h1 class="text-6xl font-bold text-lightGreen my-8 raleway-extrabold">P Paribahan</h1>
+                            <div class="w-[690px] m-auto">
+                                <p class="text-lg mb-8 text-white inter-normal">Yes, you can run unit tests and view the results
+                                    directly within the app. The integrated testing features allow for a streamlined .
+                                </p>
+                            </div>
+                            <button class="px-7 py-4 rounded-xl bg-lightGreen text-xl font-semibold">Buy
+                                Tickets</button>
+                        </div>
+                        <div class="w-full absolute bottom-[-55px]">
+                            <div class="w-[1000px] m-auto flex justify-between">
+                                <div class="bg-white w-[280px] p-7 flex gap-4 rounded-3xl border-b-4 border-lightGreen">
+                                    <div>
+                                        <img src="images/people.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-4xl text-bold font-bold">500K+</h1>
+                                        <p>Registered users</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white w-[280px] p-7 flex gap-4 rounded-3xl border-b-4 border-lightGreen">
+                                    <div>
+                                        <img src="images/ticket-cupon.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-4xl text-bold font-bold">1.7 lacks</h1>
+                                        <p>Registered users</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white w-[280px] p-7 flex gap-4 rounded-3xl border-b-4 border-lightGreen">
+                                    <div>
+                                        <img src="images/stoppage.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-4xl text-bold font-bold">80K+</h1>
+                                        <p>Registered users</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-52">
+            <div class="container">
+                <h1 class="text-center text-6xl font-bold">Best offers for you</h1>
+                <div class="py-4 flex justify-between">
+                    <div class="w-[755px] bg-darkYellow rounded-3xl">
+                        <div>
+                            <h1><span id="new-discount">15%</span> OFF</h1>
+                            <p>on your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-[50%] bg-red-500"></div>
+                        <div class="w-8 h-8 rounded-[50%] bg-red-500"></div>
+                        <div>
+                            <h1 id="new15">NEW15</h1>
+                            <p>Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="w-[755px] bg-lightPink rounded-3xl">
+                        <div>
+                            <h1><span id="new-discount">15%</span> OFF</h1>
+                            <p>on your next purchase</p>
+                            <p>use by January 2024</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-[50%] bg-red-500"></div>
+                        <div class="w-8 h-8 rounded-[50%] bg-red-500"></div>
+                        <div>
+                            <h1 id="new15">NEW15</h1>
+                            <p>Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container"></div>
+        </section>
+        <section>
+            <div class="container"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

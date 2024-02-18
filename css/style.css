@@ -1,0 +1,34 @@
+.raleway-extrabold {
+    font-family: "Raleway";
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.raleway-bold {
+    font-family: "Raleway";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.raleway-normal {
+    font-family: "Raleway";
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+.inter-normal {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+.container {
+    width: 85%;
+    max-width: 1320px;
+    margin: auto;
+}
+.banner {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
