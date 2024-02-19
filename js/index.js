@@ -22,6 +22,7 @@ let grandTotal = document.getElementById('grand-total');
 grandTotal.innerText = 0;
 grandTotal = 0;
 let couponCode = document.getElementById('coupon-apply');
+let discountAmount = 0;
 
 
 
@@ -32,6 +33,8 @@ function bookedSeat(seatId){
     
         booked.classList.add('bg-lightGreen');
         count = count + 1;
+
+        document.getElementById('ticketNum').innerText = count;
         
         totalSeat = totalSeat - 1;
         document.getElementById('total-seat').innerText = totalSeat;
@@ -73,6 +76,27 @@ for (let book of seatNumber) {
 couponCodeApply.addEventListener('click', function(){
     if(couponCode.value === 'NEW15'){
 
+        let totalCost = document.getElementById('total-cost');
+        let discountAmount = (totalCost.innerText/100)*15;
+        let afterDiscount = totalCost.innerText - discountAmount;
+        document.getElementById('grand-total').innerText = afterDiscount;
+        console.log(afterDiscount);
+        document.getElementById('couponForm').classList.add('hidden');
     }
-    else if(couponCode.value === 'Couple20')
+    else if(couponCode.value === 'Couple 20'){
+        let totalCost = document.getElementById('total-cost');
+        let discountAmount = (totalCost.innerText/100)*20;
+        let afterDiscount = totalCost.innerText - discountAmount;
+        document.getElementById('grand-total').innerText = afterDiscount;
+        console.log(afterDiscount);
+        document.getElementById('couponForm').classList.add('hidden');
+    }
+})
+
+const confirmTicket = document.getElementById('confirm');
+confirmTicket.addEventListener('click', function(){
+    document.getElementById('header').classList.add('hidden');
+    document.getElementById('main').classList.add('hidden');
+    document.getElementById('footer').classList.add('hidden');
+    document.getElementById('success').classList.remove('hidden');
 })
