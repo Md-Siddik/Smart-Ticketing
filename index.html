@@ -84,7 +84,7 @@
                                     directly within the app. The integrated testing features allow for a streamlined .
                                 </p>
                             </div>
-                            <button class="px-7 py-4 rounded-xl bg-lightGreen text-xl font-semibold">Buy
+                            <button id="buy-tickets" class="px-7 py-4 rounded-xl bg-lightGreen text-xl font-semibold">Buy
                                 Tickets</button>
                         </div>
                         <div class="w-full absolute bottom-[-55px]">
@@ -148,7 +148,7 @@
                         <div class="w-20 h-20 rounded-[50%] bg-white absolute top-[-40px] left-[408px]"></div>
                         <div class="w-20 h-20 rounded-[50%] bg-white absolute bottom-[-40px] left-[408px]"></div>
                         <div class="pl-16 pt-20 text-center">
-                            <h1 id="new15" class="raleway-bold text-4xl">Couple 20</h1>
+                            <h1 id="couple20" class="raleway-bold text-4xl">Couple 20</h1>
                             <p class="raleway-normal text-xl pt-5">Coupon Code</p>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-lightGray border-t-2 border-lightGreen rounded-[50px]">
+        <section id="ticket-section" class="bg-lightGray border-t-2 border-lightGreen rounded-[50px]">
             <div class="container">
                 <div class="w-[700px] text-center pt-28 m-auto">
                     <h1 class="raleway-bold text-4xl pb-8">P.H Paribahan</h1>
@@ -182,7 +182,7 @@
                                 <div
                                     class="w-40 flex gap-2 items-center bg-green-100 text-lightGreen inter-semibold px-4 py-2 rounded-xl">
                                     <img src="images/seat-green.png" alt="">
-                                    <p><span>8</span> Seat left</p>
+                                    <p><span id="total-seat"></span> Seat left</p>
                                 </div>
                             </div>
                             <div class="">
@@ -224,7 +224,7 @@
                         <div class="flex justify-center mb-6">
                             <img src="images/fare.png" alt="">
                         </div>
-                        <h1 class="raleway-bold text-4xl mb-2 raleway-bold">550 Taka</h1>
+                        <h1 class="raleway-bold text-4xl mb-2 raleway-bold"><span id="price">550</span> Taka</h1>
                         <p class="raleway-semibold text-2xl text-gray-500">Per Seat</p>
                     </div>
                 </div>
@@ -234,15 +234,14 @@
                             <h1 class="text-2xl raleway-semibold">Select Your Seat</h1>
                         </div>
 
-
                         <div class="flex justify-between border-b-2 border-dashed border-lightGray">
                             <div class="flex item-center py-4 gap-2">
                                 <img src="images/seat-gray.png" alt="">
-                                <p>Available</p>
+                                <p class="text-lg">Available</p>
                             </div>
                             <div class="flex item-center py-4 gap-2">
                                 <img src="images/seat-green-filled.png" alt="">
-                                <p>Selected</p>
+                                <p class="text-lg text-lightGreen">Selected</p>
                             </div>
                         </div>
 
@@ -252,28 +251,30 @@
                             </div>
                         </div>
 
+                        <!-- Key area -->
+
                         <div>
                             <div class="flex justify-between py-2">
                                 <div class="flex items-center gap-6">
                                     <p>A</p>
-                                    <kbd class="kbd px-9 py-3">A1</kbd>
-                                    <kbd class="kbd px-9 py-3">A2</kbd>
+                                    <kbd id="A1" class="kbd px-9 py-3">A1</kbd>
+                                    <kbd id="A2" class="kbd px-9 py-3">A2</kbd>
                                 </div>
                                 <div class="flex gap-6">
-                                    <kbd class="kbd px-9 py-3">A3</kbd>
-                                    <kbd class="kbd px-9 py-3">A4</kbd>
+                                    <kbd id="A3" class="kbd px-9 py-3">A3</kbd>
+                                    <kbd id="A4" class="kbd px-9 py-3">A4</kbd>
                                 </div>
                             </div>
 
                             <div class="flex justify-between py-2">
                                 <div class="flex items-center gap-6">
                                     <p>B</p>
-                                    <kbd class="kbd px-9 py-3">B1</kbd>
-                                    <kbd class="kbd px-9 py-3">B2</kbd>
+                                    <kbd id="B1" class="kbd px-9 py-3">B1</kbd>
+                                    <kbd id="B2" class="kbd px-9 py-3">B2</kbd>
                                 </div>
                                 <div class="flex gap-6">
-                                    <kbd class="kbd px-9 py-3">B3</kbd>
-                                    <kbd class="kbd px-9 py-3">B4</kbd>
+                                    <kbd id="B3" class="kbd px-9 py-3">B3</kbd>
+                                    <kbd id="B4" class="kbd px-9 py-3">B4</kbd>
                                 </div>
                             </div>
                         </div>
@@ -290,34 +291,29 @@
                             <h4>Class</h4>
                             <h4>Price</h4>
                         </div>
-                        <div class="border-b-2 border-gray-400 mx-8">
-                            <div class="flex justify-between inter-normal text-lg py-4">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
-                            <div class="flex justify-between inter-normal text-lg py-4">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
+
+                        <!-- Seat number area -->
+
+                        <div id="ticket-view" class="border-b-2 border-gray-400 mx-8">
                         </div>
                         <div class="flex justify-between mx-8 py-4 inter-semibold text-lg">
                             <p>Total Price</p>
-                            <p>BDT 1100</p>
-                        </div>
-                        <div class="bg-white mx-8 rounded-lg">
-                            <form action="" class="flex justify-between">
-                                <input type="text" class="rounded-lg px-6" placeholder="Have any coupon?" name="" id="">
-                                <button
-                                    class="px-4 py-2 m-2 rounded-lg bg-lightGreen text-lg font-semibold text-white">Apply</button>
-                            </form>
+                            <p>BDT <span id="total-cost"></span></p>
                         </div>
 
+                        <!-- Apply area -->
+
+                        <div class="bg-white mx-8 rounded-lg">
+                            <div class="flex justify-between">
+                                <input type="text" class="rounded-lg px-6" placeholder="Have any coupon?" name="" id="coupon-apply">
+                                <button id="couponCodeApply"
+                                    class="px-4 py-2 m-2 rounded-lg bg-lightGreen text-lg font-semibold text-white">Apply</button>
+                            </div>
+                        </div>
 
                         <div class="flex justify-between mx-8 py-4 inter-semibold text-lg pb-16">
                             <p>Grand Total</p>
-                            <p>BDT 1100</p>
+                            <p>BDT <span id="grand-total"></span></p>
                         </div>
 
                         <div>
@@ -358,11 +354,10 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container"></div>
-        </section>
     </main>
     <footer></footer>
+    
+    <script src="js/index.js"></script>
 </body>
 
 </html>
