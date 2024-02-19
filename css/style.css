@@ -10,6 +10,12 @@
     font-weight: 700;
     font-style: normal;
 }
+.raleway-semibold {
+    font-family: "Raleway";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 .raleway-normal {
     font-family: "Raleway";
     font-optical-sizing: auto;
@@ -21,7 +27,26 @@
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-  }
+}
+.inter-semibold {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.inter-bold {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.inter-extrabold {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .container {
     width: 85%;
     max-width: 1320px;
